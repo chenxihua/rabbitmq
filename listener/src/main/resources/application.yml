@@ -1,0 +1,16 @@
+server:
+    tomcat:
+        uri-encoding: UTF-8
+        max-threads: 1000
+        min-spare-threads: 30
+    port: 8082
+    servlet:
+        context-path: /listener
+rabbitmq:
+  ip: 192.168.244.128
+  port: 5672
+  username: guest
+  password: guest
+  virtualHost: /
+  concurrentConsumers: 3
+  maxConcurrentConsumers: 10
